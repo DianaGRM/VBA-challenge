@@ -14,7 +14,7 @@ j = 2
 ticnext = Cells(3, 1).Value
 tic = Cells(2, 1).Value
 
-
+    'The while won't stop until all the ticker symbols pass thru
 While Not (tic = "")
 
 If tic = ticnext Then
@@ -73,6 +73,7 @@ volu = Cells(2, 12).Value
 maxin = 0
 maxde = 0
 maxvol = 0
+        'mx, mn and vl help store the row position of the ticker with the Greatest increase, decrease and total volume  
 mx = 0
 mn = 0
 vl = 0
